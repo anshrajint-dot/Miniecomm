@@ -1,16 +1,130 @@
-# React + Vite
+# 🛍️ Mini E-Commerce App (React + Vite)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern and responsive **product listing web application** built using React.js.
+This project demonstrates real-world frontend development skills including API integration, state management, routing, and responsive UI design.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Live Demo
 
-## React Compiler
+👉 https://minilab23.netlify.app
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 📸 Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* 📦 Product listing (image, title, price, category)
+* 🔍 Search products by title
+* 🏷️ Filter products by category
+* 📄 Product details page
+* 📱 Fully responsive design (mobile, tablet, desktop)
+* ⏳ Loading and error handling
+* 🛒 Add to Cart functionality
+* 💾 Cart stored in localStorage
+* 📄 Pagination system
+* 🌙 Dark mode support
+
+---
+
+## 🛠️ Tech Stack
+
+* React.js (Vite)
+* JavaScript (ES6+)
+* CSS3
+* React Router DOM
+* Fake Store API
+
+---
+
+## 🔗 API Used
+
+https://fakestoreapi.com/products
+
+---
+
+## 📁 Project Structure
+
+```bash id="yq9q2v"
+src/
+  components/
+    ProductList.jsx
+    Card.jsx
+    SearchBar.jsx
+    Filter.jsx
+  pages/
+    ProductDetails.jsx
+  App.jsx
+  main.jsx
+  index.css
+```
+
+---
+
+## ⚙️ Installation & Setup
+
+Clone the repository:
+
+```bash id="zsnk1b"
+git clone https://github.com/anshrajint-dot/Miniecomm.git
+cd Miniecomm
+```
+
+Install dependencies:
+
+```bash id="6t8p6b"
+npm install
+```
+
+Run the project:
+
+```bash id="l5mcm5"
+npm run dev
+```
+
+---
+
+## 🏗️ Build for Production
+
+```bash id="63zgr4"
+npm run build
+```
+
+---
+
+## 🌐 Deployment
+
+This project is deployed on **Netlify**.
+
+---
+
+## 🎯 Assignment Requirements Covered
+
+* ✅ React logic and hooks
+* ✅ API integration
+* ✅ Search and filtering
+* ✅ Component-based architecture
+* ✅ Responsive UI design
+* ✅ Product detail routing
+* ✅ Bonus features implemented
+
+---
+
+## 💡 Future Improvements
+
+* 🛒 Cart page with quantity control
+* ❤️ Wishlist feature
+* 🔐 Authentication system
+* 💳 Payment integration
+
+---
+
+## 👨‍💻 Author
+
+**Ansh Raj**
+GitHub: https://github.com/anshrajint-dot
+
+---
+
+## ⭐ Support
+
+If you like this project, give it a ⭐ on GitHub!
