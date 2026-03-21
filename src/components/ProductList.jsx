@@ -1,4 +1,3 @@
-
 import { useEffect, useState } from "react";
 import Card from "./Card";
 import SearchBar from "./SearchBar";
@@ -37,15 +36,15 @@ export default function ProductList() {
     setFiltered(products.filter((p) => p.category === category));
   };
 
-  if (loading) return <p>Loading...</p>;
-  if (error) return <p>{error}</p>;
+  if (loading) return <p className="center">Loading...</p>;
+  if (error) return <p className="center error">{error}</p>;
 
   return (
-    <div className="p-4">
+    <div className="container">
       <SearchBar onSearch={handleSearch} />
       <Filter products={products} onFilter={handleFilter} />
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
+      <div className="grid">
         {filtered.map((product) => (
           <Card key={product.id} product={product} />
         ))}

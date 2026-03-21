@@ -5,13 +5,16 @@ export default function Card({ product }) {
 
   return (
     <div
-      className="border p-4 rounded cursor-pointer"
+      className="card"
       onClick={() => navigate(`/product/${product.id}`)}
     >
-      <img src={product.image} alt={product.title} className="h-40 mx-auto" />
-      <h2 className="text-sm font-bold mt-2">{product.title}</h2>
-      <p className="text-green-600">${product.price}</p>
-      <p className="text-xs text-gray-500">{product.category}</p>
+      <img src={product.image} alt={product.title} />
+
+      <h2>{product.title}</h2>
+
+      <p className="price">${product.price}</p>
+
+      <p className="category">{product.category}</p>
     </div>
   );
 }

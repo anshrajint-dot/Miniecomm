@@ -11,15 +11,23 @@ export default function ProductDetails() {
       .then((data) => setProduct(data));
   }, [id]);
 
-  if (!product) return <p>Loading...</p>;
+  if (!product) return <p className="center">Loading...</p>;
 
   return (
-    <div className="p-4">
-      <img src={product.image} className="h-60 mx-auto" />
-      <h1 className="text-xl font-bold mt-4">{product.title}</h1>
-      <p className="text-green-600 text-lg">${product.price}</p>
-      <p className="mt-2">{product.description}</p>
-      <p className="text-sm text-gray-500">{product.category}</p>
+    <div className="container">
+      <div className="details">
+        <img src={product.image} />
+
+        <div>
+          <h1>{product.title}</h1>
+
+          <p className="price">${product.price}</p>
+
+          <p className="desc">{product.description}</p>
+
+          <p className="category">{product.category}</p>
+        </div>
+      </div>
     </div>
   );
 }

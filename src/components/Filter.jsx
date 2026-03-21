@@ -5,13 +5,9 @@ export default function Filter({ products, onFilter }) {
   ];
 
   return (
-    <div className="flex gap-2 mt-2 flex-wrap">
+    <div className="filters">
       {categories.map((cat) => (
-        <button
-          key={cat}
-          onClick={() => onFilter(cat)}
-          className="border px-3 py-1"
-        >
+        <button key={cat} onClick={() => onFilter(cat)}>
           {cat}
         </button>
       ))}
