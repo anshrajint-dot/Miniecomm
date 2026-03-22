@@ -1,7 +1,9 @@
 import { useNavigate } from "react-router-dom";
+import { useCart } from "../context/CartContext";
 
 export default function Card({ product }) {
   const navigate = useNavigate();
+  const { addToCart } = useCart();
 
   return (
     <div
@@ -15,6 +17,16 @@ export default function Card({ product }) {
       <p className="price">${product.price}</p>
 
       <p className="category">{product.category}</p>
+
+      <button
+        className="btn"
+        onClick={(e) => {
+          e.stopPropagation(); // prevent navigation
+          addToCart(product);
+        }}
+      >
+        Add to Cart
+      </button>
     </div>
   );
 }
